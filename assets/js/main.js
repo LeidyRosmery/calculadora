@@ -1,9 +1,11 @@
-var nombres= document.getElementById("nombres");
-var num1= document.getElementById("primerNumero");
-var num2= document.getElementById("segundoNumero");
-var lienzo= document.getElementById("mostrar");
 
 function sumar(){
+  var nombres= document.getElementById("nombres").value;
+  var num1= parseInt(document.getElementById("primerNumero").value);
+  var num2= parseInt(document.getElementById("segundoNumero").value);
+
+
   var resultado = num1+num2;
-  lienzo.innerHTML.value=resultado;
+  document.getElementById("mostrar").innerHTML= nombres+" el resultado de la operacion es  :"+resultado;
+
 }
